@@ -5,9 +5,9 @@
 <script>
   import echarts from 'echarts'
 
-  require('echarts/theme/macarons') // echarts theme
+ // require('echarts/theme/macarons') // echarts theme
   import resize from './mixins/resize'
-  import { lineChartInit } from '@/api/bk/dashboard/LineChart'
+//  import { lineChartInit } from '@/api/bk/dashboard/LineChart'
 
   export default {
     mixins: [resize],  // 折线图样式
@@ -65,11 +65,11 @@
     },
     methods: {
       initData() {
-        lineChartInit({ 'month': 6 }).then(
-          response => {
-            this.chartData = response.data
-          }
-        )
+        // lineChartInit({ 'month': 6 }).then(
+        //   response => {
+        //     this.chartData = response.data
+        //   }
+        // )
       },
       initChart() {
         this.chart = echarts.init(this.$el, 'macarons')

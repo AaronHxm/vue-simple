@@ -4,7 +4,7 @@
 
 <script>
   import echarts from 'echarts'
-  import { shiftUPMethod } from '@/api/bk/dashboard/Sector'
+  //import { shiftUPMethod } from '@/api/bk/dashboard/Sector'
 
 
   export default {
@@ -68,16 +68,16 @@
     },
     methods: {
       initData(){
-        shiftUPMethod().then(
-          response => {
-            this.chartData = response.data
-            this.shiftUP = response.data.shiftUpRate,
-            this.noShiftUP = response.data.noShiftUpRate,
-            this.AToB = response.data.aToBRate,
-            this.BToC = response.data.bToCRate,
-            this.AToC = response.data.aToCRate
-          }
-        )
+        // shiftUPMethod().then(
+        //   response => {
+        //     this.chartData = response.data
+        //     this.shiftUP = response.data.shiftUpRate,
+        //     this.noShiftUP = response.data.noShiftUpRate,
+        //     this.AToB = response.data.aToBRate,
+        //     this.BToC = response.data.bToCRate,
+        //     this.AToC = response.data.aToCRate
+        //   }
+        //)
       },
       initChart() {
         this.chart = echarts.init(this.$el, 'macarons')

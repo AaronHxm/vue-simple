@@ -57,7 +57,7 @@
 
 <script>
   import CountTo from 'vue-count-to'
-  import {initMethod} from '@/api/bk/dashboard/PanelGroup'
+ // import {initMethod} from '@/api/bk/dashboard/PanelGroup'
 
   export default {
     components: {
@@ -77,14 +77,14 @@
     methods: {
       initData() {
         // 得到四个数据
-        initMethod().then(
-          response => {
-            this.monthData = response.data.todayTotal
-            this.OKData = response.data.todayPayTotal
-            this.financingMoney = response.data.todayPayPriceTotal
-            this.financingDate = response.data.todayAveTerm
-          }
-        )
+        // initMethod().then(
+        //   response => {
+        //     this.monthData = response.data.todayTotal
+        //     this.OKData = response.data.todayPayTotal
+        //     this.financingMoney = response.data.todayPayPriceTotal
+        //     this.financingDate = response.data.todayAveTerm
+        //   }
+        // )
       },
       handleSetLineChartData(type) {
         /*使用@handleSetLineChartData调用*/

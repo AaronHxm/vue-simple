@@ -21,33 +21,33 @@
 </template>
 
 <script>
-  import PanelGroup from './components/PanelGroup'
-  import LineChart from './components/LineChart'
-  import Sector from './components/Sector'
+  // import PanelGroup from './components/PanelGroup'
+  // import LineChart from './components/LineChart'
+  // import Sector from './components/Sector'
 
-  /*曲线图中的数据*/
-  const lineChartData = {
-
-  }
-
-  export default {
-    name: 'DashboardAdmin',
-    components: {
-      PanelGroup,
-      LineChart,
-      Sector
-    },
-    data() {
-      return {
-        openTable: false
-      }
-    },
-    methods: {
-      handleSetLineChartData(type) {
-        this.lineChartData = lineChartData[type]
-      }
-    }
-  }
+  // /*曲线图中的数据*/
+  // const lineChartData = {
+  //
+  // }
+  //
+  // export default {
+  //   name: 'DashboardAdmin',
+  //   components: {
+  //     PanelGroup,
+  //     LineChart,
+  //     Sector
+  //   },
+  //   data() {
+  //     return {
+  //       openTable: false
+  //     }
+  //   },
+  //   methods: {
+  //     handleSetLineChartData(type) {
+  //       this.lineChartData = lineChartData[type]
+  //     }
+  //   }
+  //}
 </script>
 
 <style lang="scss" scoped>
