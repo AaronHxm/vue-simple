@@ -15,6 +15,6 @@ tests/**/coverage/
 *.njsproj
 *.sln
 /*.zip
-src/service/
-src/permission.js
+#src/service/
+#src/permission.js
 
